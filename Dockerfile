@@ -14,5 +14,8 @@ WORKDIR /app
 # PC上のGemfileを.(/app)にコピー
 COPY Gemfile .
 
+
+COPY Gemfile.lock .
+
 # bundle installでGemfileに記述されているgemをインストール
 RUN bundle install
