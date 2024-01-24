@@ -1,4 +1,4 @@
-version: 3
+version: '3'
 services:
   web:
     build: .
@@ -11,7 +11,7 @@ services:
       - db
   db:
     image: mysql:8.0
-    columes:
+    volumes:
       - db-volume:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: password
